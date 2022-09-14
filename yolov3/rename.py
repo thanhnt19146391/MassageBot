@@ -20,7 +20,7 @@ for i, fullName in enumerate(os.listdir(IMG_FOLDER)):
     name, ext = fullName.split('.')
     if ext != 'txt':
         old_txtName = IMG_FOLDER + name + '.txt'
-        new_txtName = TEMP_FOLDER + name + '.txt'
+        new_txtName = TEMP_FOLDER + NAME + str(maxN) + '.txt'
         oldName = IMG_FOLDER + fullName
         newName = TEMP_FOLDER + NAME + str(maxN) + EXT
         maxN += 1

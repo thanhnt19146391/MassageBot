@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-with open('10.npy', 'rb') as f:
+FOLDER = './depth_frames/'
     a = np.load(f)
 
 plt.imshow(a)

@@ -7,15 +7,8 @@ TEMP_FOLDER = FOLDER + 'temp/'
 NAME = 'back'
 EXT = '.jpg'
 
-# Count amount of images
+# Rename image files and txt files in sequential order 
 maxN = 0
-# for _, fullName in enumerate(os.listdir(IMG_FOLDER)):
-#     name, ext = fullName.split('.')
-#     if ext == 'txt':
-#         continue
-#     maxN += 1
-    
-# Rename image files and txt files in sequential order and 
 for i, fullName in enumerate(os.listdir(IMG_FOLDER)):
     name, ext = fullName.split('.')
     if ext != 'txt':
